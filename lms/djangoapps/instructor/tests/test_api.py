@@ -462,20 +462,23 @@ class TestInstructorAPIDenyLevels(SharedModuleStoreTestCase, LoginEnrollmentTest
             ('export_ora2_data', {}),
             ('rescore_problem',
              {'problem_to_reset': self.problem_urlname, 'unique_student_identifier': self.user.email}),
-            ('override_problem_score',
+            (
+                'override_problem_score',
                 {
                     'problem_to_reset': self.problem_urlname,
                     'unique_student_identifier': self.user.email,
                     'score': 0
                 }
             ),
-            ('reset_student_attempts',
+            (
+                'reset_student_attempts',
                 {
                     'problem_to_reset': self.problem_urlname,
                     'unique_student_identifier': self.user.email
                 }
             ),
-            ('reset_student_attempts',
+            (
+                'reset_student_attempts',
                 {
                     'problem_to_reset': self.problem_urlname,
                     'unique_student_identifier': self.user.email,
